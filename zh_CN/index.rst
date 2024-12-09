@@ -56,11 +56,9 @@ WeDPR(星隐)是基于区块链、安全多方计算、联合建模等技术构�
    docs/op/index.rst
    docs/op/pre_installation.md
    docs/op/wedpr.md
-   docs/op/gateway.md
-   docs/op/psi.md
-   docs/op/pir.md
-   docs/op/model.md
-   docs/op/mpc.md
+   docs/op/wedpr_builder.md
+   docs/op/wedpr_component.md
+   docs/op/jupyter.md
 
 .. toctree::
    :hidden:

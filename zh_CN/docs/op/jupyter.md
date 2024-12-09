@@ -1,1 +1,5 @@
-# 8. 搭建Jupyter
+# 4. 搭建Jupyter
+
+标签: ``专家模式`` ``Jupyter``
+
+----
