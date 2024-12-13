@@ -172,6 +172,23 @@ mkdir -p sdk && cp -r ~/fisco/nodes/127.0.0.1/sdk/* sdk/
 sed -i 's/blockchain_cert_path = ""/blockchain_cert_path = "sdk"/g' config.toml
 ```
 
+**步骤八： 配置jupyter外网访问ip**
+
+```eval_rst
+.. note::
+   - 如果是云环境部署，请配置 ``jupyter_external_ip`` , 通过外网ip来访问jupyter
+   - 如果没有配置外网ip，默认会使用deploy_ip来访问jupyter
+```
+
+```bash
+    [agency.jupyter_worker]
+        deploy_ip = ["192.168.1.2:1"]
+        # the server start port
+        server_start_port = "19000"
+        jupyter_external_ip = ""
+```
+
+
 
 ## 2.4 生成隐私计算服务配置
 
