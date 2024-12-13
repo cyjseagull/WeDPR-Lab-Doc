@@ -549,6 +549,27 @@ mkdir -p ~/wedpr/ && cp -r ~/wedpr-generated/wedpr-example ~/wedpr  && cd ~/wedp
 
 **步骤二：初始化站点端DB配置**
 
+- 创建数据库
+```eval_rst
+.. note::
+   当且仅当数据库不存在时才需创建
+```
+
+```bash
+    [agency.mysql]
+        database = "agency0"
+# 获取agency0的数据库名称, 确认不存在后，连接到对应的数据库，执行数据库创建命令:
+create database agency0
+
+
+    [agency.mysql]
+        database = "agency1"
+# 获取agency1的数据库名称, 确认不存在后，连接到对应的数据库，执行数据库创建命令:
+create database agency1
+
+```
+
+- 初始化数据库
 
 ```eval_rst
 .. note::
